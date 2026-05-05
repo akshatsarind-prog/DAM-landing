@@ -325,8 +325,9 @@
             </div>
 
              <form action="https://formspree.io/f/xpqbdrgr" method="POST">
+               <p id="success-msg" style="display:none; color:lime;">You're in. Early access coming soon.</p>
               <label for="email" class="text-sm font-black uppercase text-zinc-300">Email</label>
-              <input name="email" type="email" required placeholder="you@example.com">
+              <input type="hidden" name="_next" value="https://akshatsarind-prog.github.io/DAM-landing/">
               <button type="submit" class="focus-ring btn-primary min-h-14 rounded-xl bg-dam px-5 text-base font-black text-white transition duration-200 hover:-translate-y-0.5 hover:scale-[1.01] hover:bg-red-500">
                 Get Early Access
               </button>
