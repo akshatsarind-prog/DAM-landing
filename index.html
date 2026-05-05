@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>DAM | Defence Against Misinformation</title>
-  <meta name="description" content="DAM verifies public claims and returns evidence-backed analysis.">
+  <meta name="description" content="DAM helps teams verify public claims before they publish, brief, or respond.">
 
   <script src="https://cdn.tailwindcss.com"></script>
   <script>
@@ -80,84 +80,127 @@
       </a>
 
       <nav class="hidden items-center gap-9 text-sm font-semibold text-zinc-500 md:flex" aria-label="Main navigation">
-        <a class="transition hover:text-white" href="#example">Example</a>
-        <a class="transition hover:text-white" href="#why">Why</a>
-        <a class="transition hover:text-white" href="#what">Product</a>
+        <a class="transition hover:text-white" href="#example">Product flow</a>
+        <a class="transition hover:text-white" href="#why">Use cases</a>
+        <a class="transition hover:text-white" href="#what">What you get</a>
         <a class="transition hover:text-white" href="#why-dam">Why DAM</a>
       </nav>
 
       <a href="#early-access" class="focus-ring btn-primary hidden rounded-xl bg-dam px-4 py-2.5 text-sm font-black text-white transition duration-200 hover:-translate-y-0.5 hover:scale-[1.01] hover:bg-red-500 md:inline-flex">
-        Get Early Access
+        Join Early Access
       </a>
     </div>
   </header>
 
   <main id="top">
-    <section class="mx-auto w-[min(1180px,calc(100%-32px))] pb-28 pt-20 sm:pt-32 lg:pb-36">
-      <div class="max-w-5xl">
-        <p class="mb-6 inline-flex items-center gap-2 rounded-full border border-white/10 bg-white/[0.035] px-3 py-1.5 text-sm font-bold text-zinc-300">
-          <span class="h-1.5 w-1.5 rounded-full bg-dam"></span>
-          Defence Against Misinformation
-        </p>
+    <section class="mx-auto w-[min(1180px,calc(100%-32px))] pb-20 pt-14 sm:pt-24 lg:pb-28">
+      <div class="grid gap-12 lg:grid-cols-[minmax(0,1fr)_430px] lg:items-start">
+        <div class="max-w-3xl">
+          <p class="mb-6 inline-flex items-center gap-2 rounded-full border border-white/10 bg-white/[0.035] px-3 py-1.5 text-sm font-bold text-zinc-300">
+            <span class="h-1.5 w-1.5 rounded-full bg-dam"></span>
+            Early access for verification teams
+          </p>
 
-        <h1 class="max-w-5xl text-[3.25rem] font-black leading-[0.95] text-white sm:text-7xl lg:text-[5.7rem]">
-          Verify public claims in seconds &mdash; backed by evidence
-        </h1>
+          <h1 class="max-w-4xl text-[3rem] font-black leading-[0.98] text-white sm:text-6xl lg:text-[5rem]">
+            Verify high-stakes claims before you respond
+          </h1>
 
-        <p class="mt-8 max-w-2xl text-2xl font-semibold leading-9 text-zinc-100">
-          DAM is building a verification layer for the internet.
-        </p>
+          <p class="mt-7 max-w-2xl text-xl font-semibold leading-8 text-zinc-100 sm:text-2xl sm:leading-9">
+            DAM turns a public claim into a defensible verdict, evidence trail, and recommended response quickly.
+          </p>
 
-        <p class="mt-4 max-w-2xl text-lg leading-8 text-zinc-400">
-          Built for a world where information moves faster than verification.
-        </p>
+          <p class="mt-4 max-w-2xl text-lg leading-8 text-zinc-400">
+            Built for teams that publish, brief, investigate, or answer questions when false context can spread fast.
+          </p>
 
-        <p class="mt-3 max-w-2xl text-lg leading-8 text-zinc-400">
-          Paste any claim. Get a risk score, reasoning, and sources instantly.
-        </p>
+          <form id="heroEmailForm" class="early-access-form mt-9 grid gap-3 sm:grid-cols-[minmax(0,1fr)_auto]" data-endpoint="https://formspree.io/f/xpqbdrgr" data-source="Hero signup" novalidate>
+            <label for="heroEmail" class="sr-only">Email</label>
+            <input
+              id="heroEmail"
+              name="email"
+              type="email"
+              required
+              autocomplete="email"
+              placeholder="you@example.com"
+              aria-describedby="heroFormMessage"
+              class="focus-ring min-h-14 w-full rounded-xl border border-white/[0.12] bg-white/[0.04] px-4 text-white outline-none transition duration-200 placeholder:text-zinc-600 focus:border-dam focus:bg-black/30"
+            >
+            <input type="text" name="_gotcha" tabindex="-1" autocomplete="off" class="hidden" aria-hidden="true">
+            <button
+              type="submit"
+              class="focus-ring btn-primary min-h-14 rounded-xl bg-dam px-6 text-base font-black text-white transition duration-200 hover:-translate-y-0.5 hover:scale-[1.01] hover:bg-red-500 disabled:cursor-not-allowed disabled:opacity-60"
+            >
+              Join Early Access
+            </button>
+            <p class="text-sm font-medium leading-6 text-zinc-500 sm:col-span-2">
+              No spam. No sales call. Just an invite when your early access wave opens.
+            </p>
+            <div id="heroFormMessage" class="form-message hidden rounded-lg border px-4 py-3 text-sm font-medium sm:col-span-2" role="status" aria-live="polite"></div>
+          </form>
 
-        <div class="mt-10 flex flex-col items-start gap-3 sm:flex-row sm:items-center">
-          <a href="#early-access" class="focus-ring btn-primary inline-flex w-full justify-center rounded-xl bg-dam px-6 py-4 text-base font-black text-white transition duration-200 hover:-translate-y-0.5 hover:scale-[1.01] hover:bg-red-500 sm:w-auto">
-            Get Early Access
-          </a>
-          <a href="#example" class="focus-ring inline-flex w-full justify-center rounded-xl border border-white/[0.12] bg-white/[0.035] px-6 py-4 text-base font-bold text-zinc-200 transition duration-200 hover:-translate-y-0.5 hover:scale-[1.01] hover:border-white/20 hover:bg-white/[0.06] sm:w-auto">
-            See how it works
-          </a>
+          <div class="mt-8 grid gap-3 text-sm sm:grid-cols-3">
+            <div class="rounded-xl border border-white/10 bg-white/[0.035] p-4">
+              <p class="font-black text-white">Clear verdict</p>
+              <p class="mt-1 leading-6 text-zinc-500">True, false, mixed, or missing context.</p>
+            </div>
+            <div class="rounded-xl border border-white/10 bg-white/[0.035] p-4">
+              <p class="font-black text-white">Source trail</p>
+              <p class="mt-1 leading-6 text-zinc-500">Evidence links grouped by relevance.</p>
+            </div>
+            <div class="rounded-xl border border-white/10 bg-white/[0.035] p-4">
+              <p class="font-black text-white">Next response</p>
+              <p class="mt-1 leading-6 text-zinc-500">A careful answer your team can use.</p>
+            </div>
+          </div>
         </div>
 
-        <p class="mt-5 text-sm font-semibold text-zinc-300">
-          Paste a claim &rarr; Get risk + reasoning &rarr; See sources
-        </p>
+        <aside class="relative overflow-hidden rounded-2xl border border-white/10 bg-ash p-5 shadow-panel sm:p-6">
+          <div class="hairline absolute inset-x-0 top-0 h-px"></div>
+          <div class="mb-5 flex items-center justify-between gap-4">
+            <p class="text-xs font-black uppercase text-zinc-500">DAM analysis</p>
+            <span class="rounded-full border border-dam/30 bg-dam/[0.09] px-3 py-1 text-xs font-black text-red-200">Sample output</span>
+          </div>
 
-        <p class="mt-2 text-sm font-medium text-zinc-500">
-          Limited early testers. Access in waves.
-        </p>
-      </div>
+          <div class="rounded-xl border border-white/10 bg-black/30 p-5">
+            <p class="text-xs font-black uppercase text-zinc-500">Claim</p>
+            <p class="mt-3 text-xl font-black leading-snug text-white">
+              "A new defence contract was awarded without public bidding."
+            </p>
+          </div>
 
-      <div class="mt-16 max-w-4xl rounded-2xl border border-white/10 bg-black/25 p-2 shadow-panel">
-        <div class="grid gap-2 md:grid-cols-3">
-          <div class="rounded-xl bg-white/[0.04] p-5">
-            <p class="text-xs font-black uppercase text-zinc-500">Step 1</p>
-            <p class="mt-3 text-lg font-black text-white">Paste a claim</p>
+          <div class="mt-3 grid gap-3 sm:grid-cols-3 lg:grid-cols-1">
+            <div class="rounded-xl border border-dam/35 bg-dam/[0.09] p-4">
+              <p class="text-xs font-black uppercase text-red-200">Verdict</p>
+              <p class="mt-1 text-lg font-black text-white">Needs context</p>
+            </div>
+            <div class="rounded-xl border border-white/10 bg-white/[0.035] p-4">
+              <p class="text-xs font-black uppercase text-zinc-500">Evidence</p>
+              <p class="mt-1 font-black text-white">Tender found, award not confirmed</p>
+            </div>
+            <div class="rounded-xl border border-white/10 bg-white/[0.035] p-4">
+              <p class="text-xs font-black uppercase text-zinc-500">Suggested reply</p>
+              <p class="mt-1 leading-6 text-zinc-300">Cite the tender notice and avoid saying the award is confirmed.</p>
+            </div>
           </div>
-          <div class="rounded-xl bg-white/[0.04] p-5">
-            <p class="text-xs font-black uppercase text-zinc-500">Step 2</p>
-            <p class="mt-3 text-lg font-black text-white">Check the evidence</p>
+
+          <div class="mt-5 border-t border-white/10 pt-5">
+            <p class="text-xs font-black uppercase text-zinc-500">Sources checked</p>
+            <div class="mt-3 grid gap-2 text-sm">
+              <p class="rounded-lg bg-white/[0.035] px-3 py-2 font-semibold text-zinc-300">Official tender notice</p>
+              <p class="rounded-lg bg-white/[0.035] px-3 py-2 font-semibold text-zinc-300">Award registry</p>
+              <p class="rounded-lg bg-white/[0.035] px-3 py-2 font-semibold text-zinc-300">Prior public statement</p>
+            </div>
           </div>
-          <div class="rounded-xl border border-dam/25 bg-dam/[0.08] p-5">
-            <p class="text-xs font-black uppercase text-red-200">Step 3</p>
-            <p class="mt-3 text-lg font-black text-white">Return a verdict</p>
-          </div>
-        </div>
+        </aside>
       </div>
     </section>
 
     <section id="example" class="border-t border-white/[0.08] py-24 lg:py-32">
       <div class="mx-auto w-[min(1180px,calc(100%-32px))]">
         <div class="max-w-3xl">
-          <p class="mb-4 text-sm font-black uppercase text-dam">Example</p>
+          <p class="mb-4 text-sm font-black uppercase text-dam">Product flow</p>
           <h2 class="text-4xl font-black leading-tight text-white sm:text-5xl">
-            From claim to evidence-backed verdict
+            From risky claim to usable response
           </h2>
         </div>
 
@@ -219,24 +262,24 @@
     <section id="why" class="border-t border-white/[0.08] py-24 lg:py-32">
       <div class="mx-auto w-[min(1180px,calc(100%-32px))]">
         <div class="max-w-3xl">
-          <p class="mb-4 text-sm font-black uppercase text-dam">Why this matters</p>
+          <p class="mb-4 text-sm font-black uppercase text-dam">Use cases</p>
           <h2 class="text-4xl font-black leading-tight text-white sm:text-5xl">
-            Misinformation moves faster than verification
+            Built for the moments when a wrong answer is expensive
           </h2>
         </div>
 
         <div class="mt-16 grid gap-10 md:grid-cols-3">
           <article class="border-t border-white/[0.14] pt-7">
-            <h3 class="text-xl font-black text-white">Public trust is fragile</h3>
-            <p class="mt-4 leading-7 text-zinc-400">A vague claim can harden into belief before facts catch up.</p>
+            <h3 class="text-xl font-black text-white">Before you publish</h3>
+            <p class="mt-4 leading-7 text-zinc-400">Check whether a public claim is supported before it reaches your audience.</p>
           </article>
           <article class="border-t border-white/[0.14] pt-7">
-            <h3 class="text-xl font-black text-white">Manual verification is slow</h3>
-            <p class="mt-4 leading-7 text-zinc-400">Teams lose time chasing links, screenshots, and source trails.</p>
+            <h3 class="text-xl font-black text-white">When a claim spreads</h3>
+            <p class="mt-4 leading-7 text-zinc-400">Find what is confirmed, what is missing, and what should not be repeated yet.</p>
           </article>
           <article class="border-t border-white/[0.14] pt-7">
-            <h3 class="text-xl font-black text-white">Bad responses amplify misinformation</h3>
-            <p class="mt-4 leading-7 text-zinc-400">Saying too much, too soon, can create a second problem.</p>
+            <h3 class="text-xl font-black text-white">When leadership asks</h3>
+            <p class="mt-4 leading-7 text-zinc-400">Turn evidence into a concise answer with the right caveats and source links.</p>
           </article>
         </div>
       </div>
@@ -245,32 +288,32 @@
     <section id="what" class="border-t border-white/[0.08] py-24 lg:py-32">
       <div class="mx-auto w-[min(1180px,calc(100%-32px))]">
         <div class="max-w-3xl">
-          <p class="mb-4 text-sm font-black uppercase text-dam">What it does</p>
+          <p class="mb-4 text-sm font-black uppercase text-dam">What you get</p>
           <h2 class="text-4xl font-black leading-tight text-white sm:text-5xl">
-            A verification workflow for real-world claims
+            Everything needed to make a careful call
           </h2>
         </div>
 
         <div class="mt-16 grid gap-5 sm:grid-cols-2">
           <article class="premium-panel rounded-2xl border border-white/10 p-7 shadow-panel transition duration-200 hover:-translate-y-1 hover:border-white/20 sm:p-8">
             <span class="text-sm font-black uppercase text-zinc-500">01</span>
-            <h3 class="mt-7 text-2xl font-black text-white">Find the origin</h3>
-            <p class="mt-4 leading-7 text-zinc-400">Trace where a claim started and how it is spreading.</p>
+            <h3 class="mt-7 text-2xl font-black text-white">Claim breakdown</h3>
+            <p class="mt-4 leading-7 text-zinc-400">Extract the exact claim, entities, dates, and assumptions that need checking.</p>
           </article>
           <article class="premium-panel rounded-2xl border border-white/10 p-7 shadow-panel transition duration-200 hover:-translate-y-1 hover:border-white/20 sm:p-8">
             <span class="text-sm font-black uppercase text-zinc-500">02</span>
-            <h3 class="mt-7 text-2xl font-black text-white">Compare against evidence</h3>
-            <p class="mt-4 leading-7 text-zinc-400">Check claims against sources, records, and prior statements.</p>
+            <h3 class="mt-7 text-2xl font-black text-white">Evidence comparison</h3>
+            <p class="mt-4 leading-7 text-zinc-400">Compare the claim against records, source pages, and prior public statements.</p>
           </article>
           <article class="premium-panel rounded-2xl border border-white/10 p-7 shadow-panel transition duration-200 hover:-translate-y-1 hover:border-white/20 sm:p-8">
             <span class="text-sm font-black uppercase text-zinc-500">03</span>
-            <h3 class="mt-7 text-2xl font-black text-white">Show confidence clearly</h3>
-            <p class="mt-4 leading-7 text-zinc-400">Separate confirmed facts from assumptions and missing context.</p>
+            <h3 class="mt-7 text-2xl font-black text-white">Confidence and gaps</h3>
+            <p class="mt-4 leading-7 text-zinc-400">Separate confirmed facts, missing context, and claims that need escalation.</p>
           </article>
           <article class="premium-panel rounded-2xl border border-white/10 p-7 shadow-panel transition duration-200 hover:-translate-y-1 hover:border-white/20 sm:p-8">
             <span class="text-sm font-black uppercase text-zinc-500">04</span>
-            <h3 class="mt-7 text-2xl font-black text-white">Suggest next action</h3>
-            <p class="mt-4 leading-7 text-zinc-400">Turn the verdict into a clear response or escalation path.</p>
+            <h3 class="mt-7 text-2xl font-black text-white">Response guidance</h3>
+            <p class="mt-4 leading-7 text-zinc-400">Draft a cautious answer that cites evidence and avoids overclaiming.</p>
           </article>
         </div>
       </div>
@@ -314,27 +357,150 @@
             <div>
               <p class="mb-4 text-sm font-black uppercase text-dam">Early access</p>
               <h2 class="max-w-2xl text-4xl font-black leading-tight text-white sm:text-5xl">
-                Get early access to DAM
+                Join the first DAM access waves
               </h2>
               <p class="mt-6 max-w-2xl text-lg leading-8 text-zinc-300">
-                We&rsquo;re opening DAM to early testers interested in verifying public claims faster.
+                Leave your email and we&rsquo;ll invite you when DAM is ready for teams testing faster claim verification workflows.
               </p>
               <p class="mt-7 inline-flex rounded-full border border-white/[0.12] bg-white/[0.035] px-3 py-1.5 text-sm font-bold text-zinc-300">
-                Early users already testing DAM
+                Limited early access. Built with feedback from real workflows.
               </p>
             </div>
 
-             <form action="https://formspree.io/f/xpqbdrgr" method="POST">
-               <p id="success-msg" style="display:none; color:lime;">You're in. Early access coming soon.</p>
-              <label for="email" class="text-sm font-black uppercase text-zinc-300">Email</label>
-              <input type="hidden" name="_next" value="https://akshatsarind-prog.github.io/DAM-landing/">
-              <button type="submit" class="focus-ring btn-primary min-h-14 rounded-xl bg-dam px-5 text-base font-black text-white transition duration-200 hover:-translate-y-0.5 hover:scale-[1.01] hover:bg-red-500">
-                Get Early Access
+            <form id="emailForm" class="early-access-form space-y-3" data-endpoint="https://formspree.io/f/xpqbdrgr" data-source="Bottom CTA signup" novalidate>
+              <div>
+                <label for="email" class="block text-sm font-black uppercase text-zinc-300 mb-2">Email</label>
+                <input 
+                  id="email" 
+                  name="email" 
+                  type="email" 
+                  required 
+                  autocomplete="email" 
+                  placeholder="you@example.com" 
+                  aria-describedby="formMessage"
+                  class="focus-ring w-full min-h-14 rounded-xl border border-white/[0.12] bg-white/[0.035] px-4 text-white outline-none transition duration-200 placeholder:text-zinc-600 focus:border-dam focus:bg-black/30"
+                >
+              </div>
+              <input type="text" name="_gotcha" tabindex="-1" autocomplete="off" class="hidden" aria-hidden="true">
+              <button 
+                type="submit" 
+                class="focus-ring btn-primary w-full min-h-14 rounded-xl bg-dam px-5 text-base font-black text-white transition duration-200 hover:-translate-y-0.5 hover:scale-[1.01] hover:bg-red-500 disabled:opacity-60 disabled:cursor-not-allowed"
+              >
+                Join Early Access
               </button>
               <p class="text-sm leading-6 text-zinc-500">
-                No spam. Just updates when early access opens.
+                No spam. Just product updates and your invite.
               </p>
+              <div id="formMessage" class="form-message hidden rounded-lg border px-4 py-3 text-sm font-medium" role="status" aria-live="polite"></div>
             </form>
+
+            <script>
+              (function() {
+                const messageStyles = {
+                  error: 'form-message rounded-lg border border-red-500/30 bg-red-500/10 px-4 py-3 text-sm font-medium text-red-300',
+                  success: 'form-message rounded-lg border border-green-500/30 bg-green-500/10 px-4 py-3 text-sm font-medium text-green-300'
+                };
+
+                const getServiceError = async (response) => {
+                  try {
+                    const result = await response.json();
+                    if (Array.isArray(result.errors) && result.errors.length > 0) {
+                      return result.errors
+                        .map((error) => error.message)
+                        .filter(Boolean)
+                        .join(' ');
+                    }
+                  } catch (error) {
+                    return '';
+                  }
+
+                  return '';
+                };
+
+                document.querySelectorAll('.early-access-form').forEach((form) => {
+                  const emailInput = form.querySelector('input[type="email"]');
+                  const messageDiv = form.querySelector('.form-message');
+                  const submitBtn = form.querySelector('button[type="submit"]');
+                  const endpoint = form.dataset.endpoint;
+                  const defaultButtonText = submitBtn.textContent.trim();
+                  const messageLayoutClass = messageDiv.classList.contains('sm:col-span-2') ? ' sm:col-span-2' : '';
+
+                  let isSubmitting = false;
+
+                  const showMessage = (type, text) => {
+                    messageDiv.className = messageStyles[type] + messageLayoutClass;
+                    messageDiv.textContent = text;
+                    messageDiv.classList.remove('hidden');
+                  };
+
+                  const clearMessage = () => {
+                    messageDiv.classList.add('hidden');
+                    messageDiv.textContent = '';
+                  };
+
+                  const setSubmitting = (submitting) => {
+                    isSubmitting = submitting;
+                    submitBtn.disabled = submitting;
+                    submitBtn.textContent = submitting ? 'Sending...' : defaultButtonText;
+                  };
+
+                  form.addEventListener('submit', async (event) => {
+                    event.preventDefault();
+                    event.stopPropagation();
+
+                    if (isSubmitting) {
+                      return;
+                    }
+
+                    clearMessage();
+                    emailInput.value = emailInput.value.trim();
+                    emailInput.setAttribute('aria-invalid', 'false');
+
+                    if (!emailInput.validity.valid) {
+                      emailInput.setAttribute('aria-invalid', 'true');
+                      emailInput.focus();
+                      showMessage('error', 'Please enter a valid email address.');
+                      return;
+                    }
+
+                    setSubmitting(true);
+
+                    try {
+                      const formData = new FormData(form);
+                      formData.set('email', emailInput.value);
+                      formData.set('_replyto', emailInput.value);
+                      formData.set('_subject', 'New DAM early access request');
+                      formData.set('source', form.dataset.source || 'DAM landing page');
+
+                      const response = await fetch(endpoint, {
+                        method: 'POST',
+                        headers: {
+                          'Accept': 'application/json'
+                        },
+                        body: formData
+                      });
+
+                      if (response.ok) {
+                        form.reset();
+                        showMessage('success', 'Success! You are on the early access list.');
+                      } else {
+                        const errorMessage = await getServiceError(response);
+                        showMessage('error', errorMessage || 'Something went wrong. Please try again.');
+                      }
+                    } catch (error) {
+                      showMessage('error', 'Network error. Please check your connection and try again.');
+                    } finally {
+                      setSubmitting(false);
+                    }
+                  });
+
+                  emailInput.addEventListener('input', () => {
+                    emailInput.setAttribute('aria-invalid', 'false');
+                    clearMessage();
+                  });
+                });
+              })();
+            </script>
           </div>
         </div>
       </div>
