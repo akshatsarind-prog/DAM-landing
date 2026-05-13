@@ -57,6 +57,18 @@
       box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.3), 0 16px 34px rgba(240, 58, 58, 0.24);
     }
 
+    .cta-live {
+      box-shadow:
+        inset 0 1px 0 rgba(255, 255, 255, 0.1),
+        0 18px 36px rgba(0, 0, 0, 0.34);
+    }
+
+    .cta-live:hover {
+      box-shadow:
+        inset 0 1px 0 rgba(255, 255, 255, 0.15),
+        0 22px 42px rgba(0, 0, 0, 0.42);
+    }
+
     .premium-panel {
       background:
         linear-gradient(180deg, rgba(255, 255, 255, 0.055), rgba(255, 255, 255, 0.018)),
@@ -86,8 +98,8 @@
         <a class="transition hover:text-white" href="#why-dam">Why DAM</a>
       </nav>
 
-      <a href="#early-access" class="focus-ring btn-primary hidden rounded-xl bg-dam px-4 py-2.5 text-sm font-black text-white transition duration-200 hover:-translate-y-0.5 hover:scale-[1.01] hover:bg-red-500 md:inline-flex">
-        Join Early Access
+      <a href="https://dam-v1-psi.vercel.app/" target="_blank" rel="noopener noreferrer" class="focus-ring cta-live inline-flex items-center justify-center whitespace-nowrap rounded-xl border border-white/10 bg-white/95 px-3.5 py-2 text-xs font-black text-ink transition duration-200 hover:-translate-y-0.5 hover:border-white/20 hover:bg-white sm:px-4 sm:py-2.5 sm:text-sm">
+        Launch App
       </a>
     </div>
   </header>
@@ -112,6 +124,15 @@
           <p class="mt-4 max-w-2xl text-lg leading-8 text-zinc-400">
             Built for teams that publish, brief, investigate, or answer questions when false context can spread fast.
           </p>
+
+          <div class="mt-9 flex flex-col gap-4 sm:flex-row sm:items-center">
+            <a href="https://dam-v1-psi.vercel.app/" target="_blank" rel="noopener noreferrer" class="focus-ring cta-live inline-flex min-h-14 items-center justify-center rounded-xl border border-white/10 bg-white/95 px-7 py-4 text-base font-black text-ink transition duration-200 hover:-translate-y-0.5 hover:border-white/20 hover:bg-white sm:px-8 sm:text-lg">
+              Try DAM V1
+            </a>
+            <p class="max-w-xl text-sm leading-6 text-zinc-500">
+              Open the live system in a new tab and test a claim directly.
+            </p>
+          </div>
 
           <form id="heroEmailForm" class="early-access-form mt-9 grid gap-3 sm:grid-cols-[minmax(0,1fr)_auto]" data-endpoint="https://formspree.io/f/xpqbdrgr" data-source="Hero signup" novalidate>
             <label for="heroEmail" class="sr-only">Email</label>
@@ -349,21 +370,44 @@
       </div>
     </section>
 
+    <section id="product-transition" class="border-t border-white/[0.08] py-24 lg:py-32">
+      <div class="mx-auto w-[min(1180px,calc(100%-32px))]">
+        <div class="grid gap-8 rounded-3xl border border-white/10 bg-coal p-8 shadow-panel lg:grid-cols-[1fr_auto] lg:items-center lg:p-10">
+          <div class="max-w-3xl">
+            <p class="mb-4 text-sm font-black uppercase text-dam">Live product</p>
+            <h2 class="text-4xl font-black leading-tight text-white sm:text-5xl">
+              Check Any Claim Before You Share It
+            </h2>
+            <p class="mt-6 max-w-2xl text-lg leading-8 text-zinc-300">
+              Paste WhatsApp forwards, scam messages, breaking news, health claims, or suspicious links into DAM V1 and receive structured evidence-backed analysis in seconds.
+            </p>
+          </div>
+
+          <a href="https://dam-v1-psi.vercel.app/" target="_blank" rel="noopener noreferrer" class="focus-ring cta-live inline-flex min-h-14 items-center justify-center whitespace-nowrap rounded-xl border border-white/10 bg-white/95 px-7 py-4 text-base font-black text-ink transition duration-200 hover:-translate-y-0.5 hover:border-white/20 hover:bg-white sm:px-8 sm:text-lg">
+            Open DAM V1
+          </a>
+        </div>
+      </div>
+    </section>
+
     <section id="early-access" class="border-t border-white/[0.08] py-24 lg:py-32">
       <div class="mx-auto w-[min(1180px,calc(100%-32px))]">
         <div class="relative overflow-hidden rounded-3xl border border-white/10 bg-coal p-7 shadow-panel sm:p-10 lg:p-16">
           <div class="hairline absolute inset-x-8 top-0 h-px"></div>
           <div class="grid gap-12 lg:grid-cols-[1fr_440px] lg:items-start lg:gap-16">
             <div>
-              <p class="mb-4 text-sm font-black uppercase text-dam">Early access</p>
+              <p class="mb-4 text-sm font-black uppercase text-dam">Private beta</p>
               <h2 class="max-w-2xl text-4xl font-black leading-tight text-white sm:text-5xl">
-                Join the first DAM access waves
+                DAM V1 is now live for private beta testing.
               </h2>
               <p class="mt-6 max-w-2xl text-lg leading-8 text-zinc-300">
-                Leave your email and we&rsquo;ll invite you when DAM is ready for teams testing faster claim verification workflows.
+                Test real claims, suspicious forwards, scam messages, and breaking-news rumors directly in the live system.
               </p>
-              <p class="mt-7 inline-flex rounded-full border border-white/[0.12] bg-white/[0.035] px-3 py-1.5 text-sm font-bold text-zinc-300">
-                Limited early access. Built with feedback from real workflows.
+              <a href="https://dam-v1-psi.vercel.app/" target="_blank" rel="noopener noreferrer" class="focus-ring cta-live mt-8 inline-flex min-h-14 items-center justify-center rounded-xl border border-white/10 bg-white/95 px-7 py-4 text-base font-black text-ink transition duration-200 hover:-translate-y-0.5 hover:border-white/20 hover:bg-white sm:px-8 sm:text-lg">
+                Open Live Product
+              </a>
+              <p class="mt-5 inline-flex rounded-full border border-white/[0.12] bg-white/[0.035] px-3 py-1.5 text-sm font-bold text-zinc-300">
+                No signup required to test the live product.
               </p>
             </div>
 
